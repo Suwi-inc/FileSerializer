@@ -27,23 +27,16 @@ public:
 	{
 		std::vector<antenStruct> antennas;
 
-
 		std::ifstream input_file(inputFile);
 		if (!input_file.is_open()) {
 			std::cerr << "Failed to open input file" << std::endl;
 			throw exception("error with file");
 		}
-
 		std::string jsonString;
-
 		std::stringstream buffer;
 		buffer << input_file.rdbuf();
-
 		jsonString = buffer.str();
-
 		input_file.close();
-
-
 		antennas = deserializeAntennaArray(jsonString);
 
 		return antennas;
@@ -95,7 +88,6 @@ public:
 		return antennaArray;
 	}
 	
-
 };
 class SerializeArrayPointConfig
 {
@@ -106,10 +98,10 @@ public:
 
 		std::ofstream file(outputFile);
 
-		if (file.is_open()) // check if the file was opened successfully
+		if (file.is_open()) 
 		{
-			file << json; // write the string to the file
-			file.close(); // close the file
+			file << json; 
+			file.close(); 
 			std::cout << "String written to file." << std::endl;
 		}
 		else
@@ -166,9 +158,6 @@ public:
 
 };
 
-
-//these methods deserialize the json file
-using namespace std;
 
 int main()
 {
@@ -233,9 +222,6 @@ int main()
 			std::cout << "  Coord " << j << ": (" << antenna.f32_coordinatArray[3 * j] << ", " << antenna.f32_coordinatArray[3 * j + 1] << ", " << antenna.f32_coordinatArray[3 * j + 2] << ")" << std::endl;
 		}
 	}
-
-
-
 
 }
 
