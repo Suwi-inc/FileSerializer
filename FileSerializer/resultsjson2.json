@@ -1,0 +1,71 @@
+{
+"count": 3,
+"Antenna Array": 
+[
+{
+"str_name": "name1",
+"countElements": 2,
+"referenceAntenna": 1,
+"f32_coordinatArray": 
+[
+{
+"x": 1,
+"y": 1.1,
+"z": 1.2
+}
+,
+{
+"x": 2,
+"y": 2.1,
+"z": 2.2
+}
+]
+}
+,
+{
+"str_name": "name2",
+"countElements": 2,
+"referenceAntenna": 2,
+"f32_coordinatArray": 
+[
+{
+"x": 2,
+"y": 2.1,
+"z": 2.2
+}
+,
+{
+"x": 3,
+"y": 3.1,
+"z": 3.2
+}
+]
+}
+,
+{
+"str_name": "name3",
+"countElements": 3,
+"referenceAntenna": 2,
+"f32_coordinatArray": 
+[
+{
+"x": 2,
+"y": 2.1,
+"z": 2.2
+}
+,
+{
+"x": 3,
+"y": 3.1,
+"z": 3.2
+}
+,
+{
+"x": 0.9,
+"y": 2.7,
+"z": 3.4
+}
+]
+}
+]
+}
